@@ -2,50 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link your CSS file -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+            <p>A passionate Web Developer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>A brief introduction about yourself.</p>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I’m a self-taught developer who loves building modern web apps using technologies like HTML, CSS,
+                JavaScript, Node.js, and React. I'm always eager to learn and take on new challenges.</p>
+        </div>
     </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <img src="image1.jpg" alt="Project 1">
-                <h3>Project 1 Title</h3>
-                <p>Short description of Project 1.</p>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section light">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>React</li>
+                <li>MongoDB</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project Title</h3>
+                <p>A short description of the project, the tech used, and a link to view it.</p>
+                <a href="#" target="_blank">Live Demo</a> | <a href="#" target="_blank">GitHub Repo</a>
             </div>
-            <div class="project-card">
-                <img src="image2.jpg" alt="Project 2">
-                <h3>Project 2 Title</h3>
-                <p>Short description of Project 2.</p>
+            <!-- Repeat project blocks as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section light">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Let's connect! You can reach me via:</p>
+            <div class="socials">
+                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Your email address or other contact information.</p>
-    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Your Name</p>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script> <!-- Link your JavaScript file -->
 </body>
 
 </html>
